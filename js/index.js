@@ -12,3 +12,9 @@ document.addEventListener("scroll", function(){
     $('.branding').removeClass("scroll-text");
   }
 });
+//Navbar effect
+
+$("#btnTitle").click(function(){
+  window.location.href = "#portfolio";
+});
+//on clicking "Find out more, it scrolls to portfolio/projects section"

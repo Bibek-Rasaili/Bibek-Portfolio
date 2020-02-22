@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: monospace;
 }
 
 section {
@@ -94,7 +96,10 @@ li {
   min-height: 650px;
 }
 
-
+#title {
+  text-align: center;
+  padding: 100px;
+}
 
 
 
@@ -114,9 +119,9 @@ li {
 
 /* Get in touch - call to action*/
 #contact {
+  display: flex;
+  vertical-align: middle;
   text-align: center;
-
-  padding: 70px 0;
 }
 
 
