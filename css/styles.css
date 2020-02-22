@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 70vh; /* FOR DEV Purposes - DELETE THIS LATER*/
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Navbar */
+nav {
+  padding: 20px 70px;
+
+  position: relative; /*if sticky not supported, falls back to*/
+
+  transition: background-color 0.9s;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-scroll {
+  background-color: #FFF;
+}
+
+.scroll-text {
+  color: #000 !important;
+}
+
+@supports (position: sticky) { /*Sticky is only supported by 90% of browsers*/
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.branding {
+  text-decoration: none;
+  color: #FFF;
+
+  font-family: cursive; /*yet to be decided*/
+  font-size: 2rem;
+
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  margin-left: auto !important;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgba(255,255,255,0.75);
+}
+
+
+
+
+/* Header */
+#header {
+  background-image: url("../images/imgTitle.jpg");
+  background-color: #CCC;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About me */
+#about {
+  background-color: #f8f9fa;
+}
+
+
+/* Get in touch - call to action*/
+#contact {
+  text-align: center;
+
+  padding: 70px 0;
+}
+
+
+
+
+/* Footer */
+#footer {
+  text-align: center;
+
+  background-color: #EAEAEA;
+  overflow: hidden;
+  padding: 50px;
+  /*padding change your liking
+  maybe change p color too*/
+}
+
+
+#footer a {
+  color: inherit;
+ }
+
+/* Font Awesome icon */
+.contact-icon {
+  font-size: 2.5rem;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.in-icon:hover {
+  color: #0073b1;
+}
+
+.git-icon:hover {
+  color: #666;
+}
+
+.gmail-icon:hover {
+  color: #DB473D;
+}
