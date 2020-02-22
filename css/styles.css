@@ -5,6 +5,24 @@ body {
   font-family: monospace;
 }
 
+h1 {
+  font-size: 3.5rem;
+
+  padding:0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 1.5rem;
+
+  margin: 2% auto;
+}
+
 section {
   height: 70vh; /* FOR DEV Purposes - DELETE THIS LATER*/
 }
@@ -14,6 +32,29 @@ section {
   width: 90%;
   margin: auto;
 }
+
+/* Buttons */
+.button {
+  font-size: 1rem;
+  padding: 15px;
+
+  background-color: #64A19D;
+  color: #FFF;
+
+  border: 0;
+
+
+
+/* #f4623a;  */
+
+  border-radius: 5px;
+  /* color: #FFF; */
+}
+
+#title button:hover {
+  background-color: red;
+}
+
 
 /* Navbar */
 nav {
@@ -100,6 +141,7 @@ li {
   text-align: center;
   padding: 100px;
 }
+
 
 
 
