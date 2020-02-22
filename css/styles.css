@@ -30,6 +30,12 @@ section {
   margin: auto;
 }
 
+.container-contact {
+  width:80%;
+  margin: auto;
+
+}
+
 /* Buttons */
 .button {
   font-size: 1rem;
@@ -229,15 +235,21 @@ li {
   display: flex;
   vertical-align: middle;
   text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #contact h2 {
+  font-size: 3rem;
+
   margin: 0;
 }
 
 #contact p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
@@ -257,7 +269,7 @@ li {
  }
 
 /* Font Awesome icon */
-.contact-icon {
+.footer-icon {
   font-size: 2.5rem;
 
   margin-left: 10px;
