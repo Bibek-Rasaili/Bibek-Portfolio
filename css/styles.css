@@ -156,6 +156,58 @@ li {
 /* About me */
 #about {
   background-color: #f8f9fa;
+
+  text-align: center;
+}
+
+#about img {
+  float: left;
+  width: 50%;
+}
+
+#about p {
+  float: left;
+  width: 50%;
+}
+
+.skills {
+  display: block;
+}
+
+.skill-icon {
+  font-size: 3rem;
+}
+
+.fa-html5:hover {
+  color: #EF6531;
+}
+
+.fa-css3-alt:hover {
+  color: #029AE5;
+}
+
+.fa-js:hover, .fa-js-square:hover {
+  color: #F6DE38;
+}
+
+.fa-node-js:hover {
+  color: #23B45D;
+}
+
+.fa-npm:hover {
+  color: #CA3739;
+}
+
+.fa-php:hover {
+  color: #6E81B6;
+}
+
+.fa-java:hover {
+  color: #F6992E;
+}
+
+.fa-java:active {
+  color: #E72F27;
 }
 
 
