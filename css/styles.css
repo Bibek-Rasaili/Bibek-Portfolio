@@ -1,14 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: monospace;
+}
+
+#scroll {
+  background-color: #EAEAEA;
 }
 
 h1 {
   font-size: 3.5rem;
-
-  padding:0;
+  padding: 0;
   margin-bottom: 0;
 }
 
@@ -16,12 +18,11 @@ h2 {
   font-size: 2.8rem;
 }
 
-p {
-
-}
+p {}
 
 section {
-  height: 70vh; /* FOR DEV Purposes - DELETE THIS LATER*/
+  height: 70vh;
+  /* FOR DEV Purposes - DELETE THIS LATER*/
 }
 
 /* Container */
@@ -31,23 +32,18 @@ section {
 }
 
 .container-contact {
-  width:80%;
+  width: 80%;
   margin: auto;
-
 }
 
 /* Buttons */
 .button {
   font-size: 1rem;
   padding: 15px;
-
   background-color: #64A19D;
   color: #FFF;
-
   border: 0;
-
-/* #f4623a;  */
-
+  /* #f4623a;  */
   border-radius: 5px;
   /* color: #FFF; */
 }
@@ -60,15 +56,12 @@ section {
   opacity: 0.9;
 }
 
-
 /* Navbar */
 nav {
   padding: 20px 70px;
-
-  position: relative; /*if sticky not supported, falls back to*/
-
+  position: relative;
+  /*if sticky not supported, falls back to*/
   transition: background-color 0.9s;
-
   display: flex;
   align-items: center;
 }
@@ -81,7 +74,9 @@ nav {
   color: #000 !important;
 }
 
-@supports (position: sticky) { /*Sticky is only supported by 90% of browsers*/
+@supports (position: sticky) {
+
+  /*Sticky is only supported by 90% of browsers*/
   nav {
     position: sticky;
     top: 0;
@@ -91,10 +86,9 @@ nav {
 .branding {
   text-decoration: none;
   color: #FFF;
-
-  font-family: cursive; /*yet to be decided*/
+  font-family: cursive;
+  /*yet to be decided*/
   font-size: 2rem;
-
   font-weight: 900;
 }
 
@@ -102,13 +96,10 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
   display: flex;
-
   margin-left: auto !important;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 li {
@@ -118,24 +109,19 @@ li {
 
 .nav-link {
   text-decoration: none;
-  color: rgba(255,255,255,0.5);
-
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 .nav-link:hover {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
-
-
-
 
 /* Header */
 #header {
   background-image: url("../images/imgTitle.jpg");
   background-color: #CCC;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,29 +134,28 @@ li {
 }
 
 #title p {
-    font-family: fantasy;
-
-    /* p tag ? */
-      font-size: 1.5rem;
-
-      margin: 2% auto;
+  font-family: fantasy;
+  /* p tag ? */
+  font-size: 1.5rem;
+  margin: 2% auto;
 }
 
+/* Portfolio */
+#portfolio {
+  text-align: center;
 
-
-
-
-
-
-
-
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* About me */
 #about {
   background-color: #f8f9fa;
-
   text-align: center;
   min-height: 500px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #about img {
@@ -228,27 +213,22 @@ li {
   color: #E72F27;
 }
 
-
-
 /* Get in touch - call to action*/
 #contact {
   display: flex;
   vertical-align: middle;
   text-align: center;
-
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #contact h2 {
   font-size: 3rem;
-
   margin: 0;
 }
 
 #contact p {
   font-size: 1.5rem;
-
   margin-top: 25px;
   margin-bottom: 30px;
 }
@@ -256,7 +236,6 @@ li {
 /* Footer */
 #footer {
   text-align: center;
-
   background-color: #EAEAEA;
   overflow: hidden;
   padding: 50px;
@@ -266,12 +245,11 @@ li {
 
 #footer a {
   color: inherit;
- }
+}
 
 /* Font Awesome icon */
 .footer-icon {
   font-size: 2.5rem;
-
   margin-left: 10px;
   margin-right: 10px;
 }

@@ -1,6 +1,6 @@
 
 document.addEventListener("scroll", function(){
-  document.getElementById("portfolio").innerHTML = document.documentElement.scrollTop;
+  document.getElementById("scroll").innerHTML = document.documentElement.scrollTop;
 
   if (document.documentElement.scrollTop > 50){
     $('nav').addClass("nav-scroll");
