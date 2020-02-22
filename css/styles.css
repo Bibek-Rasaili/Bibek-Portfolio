@@ -17,10 +17,7 @@ h2 {
 }
 
 p {
-  font-family: fantasy;
-  font-size: 1.5rem;
 
-  margin: 2% auto;
 }
 
 section {
@@ -43,8 +40,6 @@ section {
 
   border: 0;
 
-
-
 /* #f4623a;  */
 
   border-radius: 5px;
@@ -53,6 +48,10 @@ section {
 
 #title button:hover {
   background-color: red;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
 
 
@@ -142,7 +141,14 @@ li {
   padding: 100px;
 }
 
+#title p {
+    font-family: fantasy;
 
+    /* p tag ? */
+      font-size: 1.5rem;
+
+      margin: 2% auto;
+}
 
 
 
@@ -158,6 +164,7 @@ li {
   background-color: #f8f9fa;
 
   text-align: center;
+  min-height: 500px;
 }
 
 #about img {
@@ -174,6 +181,7 @@ li {
   display: block;
 }
 
+/* Skills fontawesome icons*/
 .skill-icon {
   font-size: 3rem;
 }
@@ -186,7 +194,7 @@ li {
   color: #029AE5;
 }
 
-.fa-js:hover, .fa-js-square:hover {
+.fa-js:hover {
   color: #F6DE38;
 }
 
@@ -196,6 +204,10 @@ li {
 
 .fa-npm:hover {
   color: #CA3739;
+}
+
+.fa-database:hover {
+  color: #006790;
 }
 
 .fa-php:hover {
@@ -211,6 +223,7 @@ li {
 }
 
 
+
 /* Get in touch - call to action*/
 #contact {
   display: flex;
@@ -218,8 +231,15 @@ li {
   text-align: center;
 }
 
+#contact h2 {
+  margin: 0;
+}
 
+#contact p {
+  font-size: 1rem;
 
+  margin-bottom: 30px;
+}
 
 /* Footer */
 #footer {
@@ -228,10 +248,9 @@ li {
   background-color: #EAEAEA;
   overflow: hidden;
   padding: 50px;
-  /*padding change your liking
-  maybe change p color too*/
+  /*padding change your liking*/
+  color: #8F8F8F;
 }
-
 
 #footer a {
   color: inherit;
