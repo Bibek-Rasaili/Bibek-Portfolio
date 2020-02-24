@@ -21,7 +21,7 @@ h2 {
 p {}
 
 section {
-  height: 70vh;
+  min-height: 70vh;
   /* FOR DEV Purposes - DELETE THIS LATER*/
 }
 
@@ -152,24 +152,39 @@ li {
 #about {
   background-color: #f8f9fa;
   text-align: center;
-  min-height: 500px;
+  min-height: 600px;
 
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-#about img {
+.bioImg-container{
   float: left;
-  width: 50%;
+  /* bioImg-container was added as img was float so, it was not "respecting the MARGIN of
+  skill container".
+
+  Therefore this container was created and img size/width set to 80%.
+  This was it respects the margin and, Looks Good on the CURRENT "personalStatement" (size). */
+}
+
+#about img {
+  width: 80%;
+  /* This is 80% of bioImg-container
+
+  and bioImg-container only has float:left and no width assigned.
+  Look out for possible debugging a future issue here. */
 }
 
 #about p {
-  float: left;
-  width: 50%;
+  font-size: 1rem;
 }
 
-.skills {
+.skill {
   display: block;
+  width: 100%;
+
+  clear: both;
+  margin: 5% auto;
 }
 
 /* Skills fontawesome icons*/
@@ -264,4 +279,14 @@ li {
 
 .gmail-icon:hover {
   color: #DB473D;
+}
+
+/* Media Queries */
+@media screen and (max-width:800px) {
+  .bioImg-container {
+    float:none;
+    /* width: 80 - play around with this if not happy.
+
+    Also media-query to make, the webpage more mobile-friendly*/
+  }
 }
