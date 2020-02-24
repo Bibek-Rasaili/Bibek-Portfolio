@@ -320,6 +320,11 @@ li {
     /* width  - future changes?*/
   }
 
+  .projects{
+    width: 80%;
+    margin: auto;
+  }
+
   .project {
     display: block;
     width : 100%;
