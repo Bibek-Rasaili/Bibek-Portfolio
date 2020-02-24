@@ -306,9 +306,22 @@ li {
 }
 
 /* Media Queries */
+@media screen and (max-width:993px) {
+  /*This has to be on top of 800px width - if not it doesn't work - flow of document*/
+  .project {
+    display: inline-block;
+    width : 35%;
+  }
+}
+
 @media screen and (max-width:800px) {
   .bioImg-container {
     float:none;
     /* width  - future changes?*/
+  }
+
+  .project {
+    display: block;
+    width : 100%;
   }
 }
