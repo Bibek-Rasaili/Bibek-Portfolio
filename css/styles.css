@@ -170,44 +170,36 @@ li {
 
 .project-image-container{
   position: relative;
+
+  cursor: pointer;
 }
 
 .project-hover {
   position: absolute;
-  /* left: 0; works with left BUT DOESN'T work if top :0; commented out..*/
+  /* left: 0; */
   top: 0;
 
   width: 100%;
   height: 100%;
-  /* this to stretch the project-hover to cover the entire "project-image-container"
-  So that the background color is applied to whole "image"*/
-  background-color: rgba(254,209,54,.9);
+  /* background-color: rgba(254,209,54,.9);  taken to individual class
+  also as that class can href to respective location so 2 uses therefore ..*/
   opacity: 0;
-  /* This hides it - opacity instead of display: none or visibility: hidden*/
-
-  transition: all 1s;
-  /*for smooth transition*/
+  /* This hides it - until the element is hovered */
+  transition: all linear .8s;
 }
 
+/* when the project image is hovered, visibility comes on via opacity: 1 */
 .project-hover:hover {
-  /* when the project image is hovered, visibility comes on via opacity: 1 */
   opacity: 1;
 }
 
+/* This centers the + icon in the centre */
 .project-hover-content {
-  /* This centers the + icon in the centre */
   position: absolute;
-  /* left: 0; not neccessary apparently - stored in GitHub for future debugging */
   top: 40%;
   /* 50 doesn't centre it */
-  
   width: 100%;
-  /* height: 100%; not needed as 1. it serves no purpose on this container(div)
-  as the stretching is taken place in parent container.
-
-  2.if height is set to 100%, because top is set to 40% to centre the '+' icon,
-  the 100% by 100% "canvas" is offset by 40% .i.e. its pushed 40% lower,
-  THEREFORE background-color is set on the parent div container/element  */
+  /* height: 100%; not needed offset by 40% + bg-color set on parent element*/
 }
 
 .project-plus {
@@ -217,10 +209,59 @@ li {
 }
 
 
-
-
 .project-caption {
   background-color: #F8F9FA;
+}
+
+/* Project colours  */
+.lucky {
+  background-color: rgba(34,120,207,.9);
+}
+
+.banana {
+  background-color: rgba(251,213,26, 0.9);
+}
+
+.orange {
+  background-color: rgba(255,165,0,.9);
+}
+
+.dicee {
+  background-color: rgba(57,62,70,.9);
+}
+
+.drum {
+  background-color: rgba(40,49,72,.9);
+}
+
+.simon {
+  background-color: rgba(3,32,62,.9);
+}
+
+.tic-tac-toe {
+  background-color: rgba(234,234,234,.98);
+  /* 98% instead of 90, because its grey-ish color.
+  this means '+' icon color change is not required */
+}
+
+.bitcoinAPI {
+  background-color: rgba(234,234,234,.95);
+  /* See tic tac toe */
+}
+
+.newsletter-signup {
+  background-color: rgba(245,245,245,.98);
+}
+
+.to-do-list {
+  /* background-color: rgba(228,234,252,.9); */
+  background-color: rgba(165,133,225,.9);
+
+  /* Second one is better, I think. */
+}
+
+.blog-website {
+  background-color: rgba(42,187,156,.9);
 }
 
 
