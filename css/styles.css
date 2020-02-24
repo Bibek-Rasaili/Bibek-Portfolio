@@ -176,7 +176,7 @@ li {
 }
 
 #about p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .skill {
@@ -285,8 +285,6 @@ li {
 @media screen and (max-width:800px) {
   .bioImg-container {
     float:none;
-    /* width: 80 - play around with this if not happy.
-
-    Also media-query to make, the webpage more mobile-friendly*/
+    /* width  - future changes?*/
   }
 }
