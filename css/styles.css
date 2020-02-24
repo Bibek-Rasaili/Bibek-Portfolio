@@ -196,7 +196,7 @@ li {
 /* This centers the + icon in the centre */
 .project-hover-content {
   position: absolute;
-  top: 40%;
+  top: 38%;
   /* 50 doesn't centre it */
   width: 100%;
   /* height: 100%; not needed offset by 40% + bg-color set on parent element*/
