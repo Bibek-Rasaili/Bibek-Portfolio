@@ -18,6 +18,14 @@ h2 {
   font-size: 2.8rem;
 }
 
+h4 {  /* projects header */
+  margin: 0;
+  font-weight: 700;
+
+  /* font-size: 1.5rem; */
+  /* line-height: 1.2; */
+}
+
 p {}
 
 section {
@@ -147,6 +155,22 @@ li {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+#portfolio img {
+  width: 100%;
+
+}
+
+.project {
+  display: inline-block;
+  width : 25%;
+}
+
+
+
+
+
+
 
 /* About me */
 #about {
