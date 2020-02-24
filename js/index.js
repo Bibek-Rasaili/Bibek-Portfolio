@@ -17,40 +17,24 @@ document.addEventListener("scroll", function(){
 $("#btnTitle").click(function(){
   window.location.href = "#portfolio";
 });
-//on clicking "Find out more, it scrolls to portfolio/projects section"
+//on clicking "Find out more button, it scrolls to portfolio/projects section"
+
 
 //click event / href for project (items)
 $('.project-hover').click(function(){
-// functon(e) can be used too
-  console.log(this.classList.contains('lucky'));
 
-  if (this.classList.contains('lucky')){ // CHANGE THE HREF - WHEN DEPLOYING!!!
-    window.location.href = "http://bibek-portfolio.com/lucky/index.html";
+  const projectArr = ["lucky", "banana", "orange", "drum", "simon", "tic-tac-toe"]
+
+  for (var i=0; i< projectArr.length; i++){
+    if (this.classList.contains(projectArr[i])){ // CHANGE THE HREF - WHEN DEPLOYING!!!
+      window.location.href = "http://bibek-portfolio.com/"+projectArr[i]+"/index.html";
+    }
   }
 
-  if(this.classList.contains('banana')){ // CHANGE THE HREF - WHEN DEPLOYING!!!
-    window.location.href = "http://bibek-portfolio.com/banana/index.html";
-  }
-
-  if(this.classList.contains('orange')){
-    window.location.href = "http://bibek-portfolio.com/orange/index.html";
-  }
-
-  if(this.classList.contains('dicee')){
-    window.location.href = "http://bibek-portfolio.com/dicee/dicee.html";
-  }
-
-  if(this.classList.contains('drum')){
-    window.location.href = "http://bibek-portfolio.com/drum/index.html";
-  }
-
-  if(this.classList.contains('simon')){
-    window.location.href = "http://bibek-portfolio.com/simon/index.html";
-  }
-
-  if(this.classList.contains('tic-tac-toe')){
-    window.location.href = "http://bibek-portfolio.com/tic-tac-toe/index.html";
-  }
+//Different urls
+if(this.classList.contains('dicee')){
+  window.location.href = "http://bibek-portfolio.com/dicee/dicee.html";
+}
 
 // NODEJS - HREF ARE DIFFERENT HERE
   if(this.classList.contains('bitcoinAPI')){
