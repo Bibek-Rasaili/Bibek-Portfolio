@@ -1,4 +1,4 @@
-
+//Navbar effect
 document.addEventListener("scroll", function(){
   document.getElementById("scroll").innerHTML = document.documentElement.scrollTop;
 
@@ -12,17 +12,15 @@ document.addEventListener("scroll", function(){
     $('.branding').removeClass("scroll-text");
   }
 });
-//Navbar effect
 
+//on clicking "Find out more button, it scrolls to portfolio/projects section"
 $("#btnTitle").click(function(){
   window.location.href = "#portfolio";
 });
-//on clicking "Find out more button, it scrolls to portfolio/projects section"
-
 
 //click event / href for project (items)
 $('.project-hover').click(function(){
-
+  
   const projectArr = ["lucky", "banana", "orange", "drum", "simon", "tic-tac-toe"]
 
   for (var i=0; i< projectArr.length; i++){

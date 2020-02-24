@@ -428,3 +428,15 @@ li {
     width : 100%;
   }
 }
+
+/* FIXING the White space on the right */
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+
+    text-align: center;
+  }
+
+/* Same issue occurs 340px and under
+however, that is negligible */
+}
