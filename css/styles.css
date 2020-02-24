@@ -164,6 +164,53 @@ li {
 .project {
   display: inline-block;
   width : 25%;
+
+  margin: 0 0 30px;
+}
+
+
+.project-image-container{
+  position: relative;
+
+}
+
+.project-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 50 doesn't centre it */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254,209,54,.9);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.project-hover:hover {
+  opacity: 1;
+}
+ /* This took so long - simple function yet long to figure out */
+.project-hover-content {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  /* 50 doesn't centre it */
+  width: 100%;
+  height: 100%;
+
+}
+
+.project-plus {
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+
+
+
+.project-caption {
+  background-color: #F8F9FA;
 }
 
 
