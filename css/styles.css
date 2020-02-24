@@ -168,36 +168,46 @@ li {
   margin: 0 0 30px;
 }
 
-
 .project-image-container{
   position: relative;
-
 }
 
 .project-hover {
   position: absolute;
-  left: 0;
+  /* left: 0; works with left BUT DOESN'T work if top :0; commented out..*/
   top: 0;
-  /* 50 doesn't centre it */
+
   width: 100%;
   height: 100%;
+  /* this to stretch the project-hover to cover the entire "project-image-container"
+  So that the background color is applied to whole "image"*/
   background-color: rgba(254,209,54,.9);
   opacity: 0;
+  /* This hides it - opacity instead of display: none or visibility: hidden*/
+
   transition: all 1s;
+  /*for smooth transition*/
 }
 
 .project-hover:hover {
+  /* when the project image is hovered, visibility comes on via opacity: 1 */
   opacity: 1;
 }
- /* This took so long - simple function yet long to figure out */
+
 .project-hover-content {
+  /* This centers the + icon in the centre */
   position: absolute;
-  left: 0;
+  /* left: 0; not neccessary apparently - stored in GitHub for future debugging */
   top: 40%;
   /* 50 doesn't centre it */
+  
   width: 100%;
-  height: 100%;
+  /* height: 100%; not needed as 1. it serves no purpose on this container(div)
+  as the stretching is taken place in parent container.
 
+  2.if height is set to 100%, because top is set to 40% to centre the '+' icon,
+  the 100% by 100% "canvas" is offset by 40% .i.e. its pushed 40% lower,
+  THEREFORE background-color is set on the parent div container/element  */
 }
 
 .project-plus {
