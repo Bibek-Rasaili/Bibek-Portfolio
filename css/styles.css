@@ -149,7 +149,7 @@ li {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* New addition here for navbar */
+/* navbar icon */
 #navbar-icon {
   /* start off hidden then ONLY shows on mobile screens */
   display: none;
@@ -168,7 +168,7 @@ can be altered to desired output */
 #navbar-icon:hover {
   color: rgba(255, 255, 255, 0.75);
 }
-/****** ENDS here new mobile navbar ***********/
+
 /* Header */
 #header {
   background-image: url("../images/imgTitle.jpg");
