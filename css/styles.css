@@ -433,21 +433,18 @@ li {
 @media screen and (max-width: 600px) {
   nav {
     display: block;
-
-    /* text-align: center; */
   }
 
   ul {
     margin-top: 15px;
   }
-
-/* Same issue occurs 340px and under
-however, that is negligible */
 }
 
 @media screen and (max-width: 520px) {
   /* conscious decision to align text center at only 520px or lower
-      due to style perference */
+      due to style perference
+      - otherwise this can just be added at - max-width: 600px.
+  */
   nav {
     text-align: center;
   }
@@ -477,39 +474,44 @@ however, that is negligible */
 }
 
 
-
 @media screen and (max-width: 340px) {
+  /* title has padding of 100px. - at 430 it is reduced to 10px but
+     added margin top 40px (to keep the text/heading/title 'centred')
+
+     - on this screen this margin is no longer needed as screen is smalled
+     and min-heigher is changed to 520px too, so the image is still somewhat 70-100vh and not stretch unnecessarily
+  */
   #title {
     margin-top: 0;
   }
-
   ul {
-    display: block;
+    /* display: block; */
     margin: 10px auto !important;
   }
-
   li {
     margin: 0;
   }
 
   /* styling */
-  /* nav {
-    text-align: center;
-  } */
   #header {
     min-height: 520px;
   }
 }
 
+/*
+   the above and below are both screen width 340.
 
+   top- one is 340 - negate further changes from 430
+   below- one is for 255px but added at 340
+          "for styling reasons - looks better already at 340 px"
+*/
 
-/* 255px and under ( starts at 254) - shows wh-ite space
-  one of the solutions can be to change nav padding:
-  from  padding: 20px 70px;
-  to    padding:  10px 30px;
-
-  but added at 340 for styling reasons - looks better already at 340 px*/
 @media screen and (max-width: 340px) {
+  /* 255px and under ( starts at 254) - shows wh-ite space
+    one of the solutions can be to change nav padding:
+    from  padding: 20px 70px;
+    to    padding:  10px 30px;
+  */
   nav {
     padding: 10px 30px;
   }
@@ -519,9 +521,7 @@ however, that is negligible */
   }
 /* these solve the whi-te space issue
 
-styling below are to proportionalise the page in respect to the NEW heading size.
-*/
-
+styling below are to proportionalise the page in respect to the NEW heading size.*/
   .branding {
     font-size: 1.8rem;
   }
