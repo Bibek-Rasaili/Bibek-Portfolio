@@ -444,3 +444,18 @@ li {
 /* Same issue occurs 340px and under
 however, that is negligible */
 }
+
+@media screen and (max-width: 340px) {
+  #title {
+    padding: 10px;
+    /* on smaller screens (such as 300px),
+    the padding on branding remains 100px therefore (is one of the reasons) causing
+    wh-ite space in right of the screen
+    ^ to avoid pigmentation on Atom - via plug-in*/
+  }
+
+  ul {
+    display: block;
+    margin: 10px auto !important;
+  }
+}
