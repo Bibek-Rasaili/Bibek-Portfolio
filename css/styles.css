@@ -458,4 +458,56 @@ however, that is negligible */
     display: block;
     margin: 10px auto !important;
   }
+
+  /* styling */
+  nav {
+    text-align: center;
+  }
+
+  #header {
+    min-height: 520px;
+  }
+
 }
+
+/* 255px and under ( starts at 254) - shows wh-ite space
+
+  one of the solutions can be to change nav padding:
+
+  from  padding: 20px 70px;
+  to    padding:  10px 30px;
+
+
+
+*/
+
+@media screen and (max-width: 340px) {
+  nav {
+    padding: 10px 30px;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+/* these solve the whi-te space issue
+
+styling below are to proportionalise the page in respect to the NEW heading size.
+*/
+
+  .branding {
+    font-size: 1.8rem;
+  }
+
+
+  .skill-icon {
+
+  }
+
+  .footer-icon {
+
+  }
+}
+
+/* 195px - it starts again - wh-ite space on the right but the screen is so small,
+    it is negligible (esp in era of big mobile screens) therefore
+    it will not be necessary to implement a solution  */
