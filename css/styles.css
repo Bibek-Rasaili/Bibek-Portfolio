@@ -434,7 +434,11 @@ li {
   nav {
     display: block;
 
-    text-align: center;
+    /* text-align: center; */
+  }
+
+  ul {
+    margin-top: 15px;
   }
 
 /* Same issue occurs 340px and under
