@@ -474,6 +474,7 @@ li {
 }
 
 
+
 @media screen and (max-width: 340px) {
 /* margins pretty much no longer necessary on most of the elements as the screen
 are too small - causing white-space on rhs */
@@ -502,7 +503,7 @@ are too small - causing white-space on rhs */
   #header {
     min-height: 520px;
   }
-  
+
 /* styling below are to proportionalise the page in respect to the NEW heading size.*/
   .branding {
     font-size: 1.8rem;
@@ -510,29 +511,34 @@ are too small - causing white-space on rhs */
 
 /* possible further improvements -
 
-1. styling icons to around half of h1/h2 or .branding font-size
+1. styling icons to around half of h1/h2 or .branding font-size /
 2. change the paragraph (or Heading tag) on about me section to sort the ratio heading-paragraph
 3. contact - GET IN TOUCH section heading can at this size me not same but more similar to rest
               of the heading tags. - reduce the paragraph accoringly, button padding slightly less
                                     padding on #contact can depend on if it creates white-space problem
                                     otherwise the padding can be kept or reduced accordingly.s */
   .skill-icon, .footer-icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
-
-  /* For future reference, CSS variable could've been used to possible proportionalise
-    these (esp header and paragraphs) more easily.
-
-    It was not used here as I had limited project experience with CSS varible and there
-    were other learning curves to overcome -
-
-    such as - manual navbar - (without bootstrap)
-            - absolute to wrap parent - (project, hover - effects)
-            - etc.*/
 }
+
+
 
 
 
 /* 195px - it starts again - wh-ite space on the right but the screen is so small,
     it is negligible (esp in era of big mobile screens) therefore
-    it will not be necessary to implement a solution  */
+    it will not be necessary to implement a solution
+*/
+
+
+/* For future reference, CSS variable could've been used to possible proportionalise
+  these (esp header and paragraphs) more easily.
+
+  It was not used here as I had limited project experience with CSS varible and there
+  were other learning curves to overcome -
+
+  such as - manual navbar - (without bootstrap)
+          - absolute to wrap parent - (project, hover - effects)
+          - etc.
+*/
