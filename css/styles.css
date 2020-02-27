@@ -16,6 +16,8 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+
+  margin: 0 0 15px;
 }
 
 h4 {  /* projects header */
@@ -37,6 +39,20 @@ section {
 .container {
   width: 90%;
   margin: auto;
+}
+
+.container-portfolio {
+  /* width: 94%;
+  margin: auto; */
+
+  padding: 70px 0;
+    /* Padding 50? 70? added to top and bottom of (pretty much) every section*/
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container-contact {
@@ -156,16 +172,22 @@ li {
   padding-bottom: 20px;
 }
 
+.portfolioTitle p{
+  color: #6c757d;
+
+  margin: 0 0 65px;
+}
+
 #portfolio img {
   width: 100%;
-
 }
+
 
 .project {
   display: inline-block;
-  width : 25%;
+  width : 30%;
 
-  margin: 0 0 30px;
+  margin: 10px 10px;
 }
 
 .project-image-container{
@@ -210,7 +232,9 @@ li {
 
 
 .project-caption {
-  background-color: #F8F9FA;
+  background-color: grey;
+/* #F8F9FA */
+  padding: 15px;
 }
 
 /* Project colours  */
@@ -404,11 +428,13 @@ li {
 }
 
 /* Media Queries */
-@media screen and (max-width:993px) {
+@media screen and (max-width:1024px) {
   /*This has to be on top of 800px width - if not it doesn't work - flow of document*/
   .project {
     display: inline-block;
-    width : 35%;
+    width : 40%;
+    /* show 2 project (items) only in screen smaller than 1024 */
+    margin: 12px 20px;
   }
 }
 
@@ -417,15 +443,20 @@ li {
     float:none;
     /* width  - future changes?*/
   }
-
+/* display 1 project per line, 80% of screen */
   .projects{
+    display: block;
     width: 80%;
     margin: auto;
   }
-
   .project {
-    display: block;
+    /* display: block; */
     width : 100%;
+
+    margin: 20px 20px;
+  }
+  .portfolioTitle p {
+    margin: 0 0 55px;
   }
 }
 
@@ -438,6 +469,18 @@ li {
   ul {
     margin-top: 15px;
     /* adding margin between branding and nav items */
+  }
+
+  .projects{
+    width: 90%;
+    margin: auto;
+  }
+  .project {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .portfolioTitle p {
+    margin: 0 0 40px;
   }
 }
 
@@ -470,6 +513,10 @@ li {
   li {
     margin: 8px auto;
     /* margin between the lists */
+  }
+
+  .project {
+    margin: 10px 10px;
   }
 }
 
