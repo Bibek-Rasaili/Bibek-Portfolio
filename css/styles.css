@@ -94,8 +94,15 @@ nav {
   background-color: #FFF;
 }
 
-.scroll-text {
+/* scroll text and textS added to differentiate
+between branding and navitems */
+.scroll-text, .scroll-texts  {
   color: #000 !important;
+}
+/* hover css is also automatically added when
+scroll-texts class is added to an element */
+.scroll-texts:hover {
+  color: rgba(0, 0, 0, 0.65) !important;
 }
 
 @supports (position: sticky) {
@@ -142,6 +149,26 @@ li {
   color: rgba(255, 255, 255, 0.75);
 }
 
+/* New addition here for navbar */
+#navbar-icon {
+  /* start off hidden then ONLY shows on mobile screens */
+  display: none;
+  /* positions navbar icon */
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  /* top, right
+can be altered to desired output */
+
+  background: transparent;
+  padding: 14px 16px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+#navbar-icon:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+/****** ENDS here new mobile navbar ***********/
 /* Header */
 #header {
   background-image: url("../images/imgTitle.jpg");
@@ -491,6 +518,37 @@ li {
   }
 }
 
+/* nav icon to be shown only on mobiles  */
+/* max-device-width:410px - 500/620px   (- 620 for dev?) */
+@media (min-width:338px) and (max-width:620px) {
+  #navbar-icon {
+    display: block;
+  }
+  #navbar-items {
+    display: none;
+  }
+  /* hide list and show icon */
+  nav {
+    display: block;
+    /* block added because it shows the links inline next to the icon  at certain res*/
+    text-align: left;
+    /* aligned left for the icon to be on the right */
+  }
+  .branding {
+    display: block;
+  }
+  ul {
+      text-align: center;
+  }
+  li {
+    margin: 8px auto;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+}
+
 @media screen and (max-width: 430px) {
   /* wh-ite space issue only started around 340px but styling changed earlier for styling reasons*/
 
@@ -529,10 +587,10 @@ are too small - causing white-space on rhs */
   }
   ul {
     /* display: block; */
-    margin: 10px auto !important;
+    margin: 7px auto !important;
   }
   li {
-    margin: 0;
+    margin: 2px auto;
   }
 
 /* 255px and under ( starts at 254) shows wh-ite space but added here for styling perference */
@@ -547,7 +605,7 @@ are too small - causing white-space on rhs */
 
   /* styling */
   #header {
-    min-height: 520px;
+    min-height: 550px;
   }
 
 /* styling below are to proportionalise the page in respect to the NEW heading size.*/
@@ -578,13 +636,6 @@ are too small - causing white-space on rhs */
 */
 
 
-/* For future reference, CSS variable could've been used to possible proportionalise
-  these (esp header and paragraphs) more easily.
-
-  It was not used here as I had limited project experience with CSS varible and there
-  were other learning curves to overcome -
-
-  such as - manual navbar - (without bootstrap)
-          - absolute to wrap parent - (project, hover - effects)
-          - etc.
+/* For future reference, CSS variable could've been used
+to possible proportionalise these (esp header and paragraphs) more easily.
 */

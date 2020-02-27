@@ -2,14 +2,18 @@
 document.addEventListener("scroll", function(){
   document.getElementById("scroll").innerHTML = document.documentElement.scrollTop;
 
-  if (document.documentElement.scrollTop > 50){
+  if (document.documentElement.scrollTop > 35){ //35 from 50 - because small screens
     $('nav').addClass("nav-scroll");
-    $('.nav-link').addClass("scroll-text");
     $('.branding').addClass("scroll-text");
+
+    $('.nav-link').addClass("scroll-texts");
+    $('#navbar-icon').addClass("scroll-texts");
   } else {
     $('nav').removeClass("nav-scroll");
-    $('.nav-link').removeClass("scroll-text");
     $('.branding').removeClass("scroll-text");
+
+    $('.nav-link').removeClass("scroll-texts");
+    $('#navbar-icon').removeClass("scroll-texts");
   }
 });
 
@@ -20,7 +24,7 @@ $("#btnTitle").click(function(){
 
 //click event / href for project (items)
 $('.project-hover').click(function(){
-  
+
   const projectArr = ["lucky", "banana", "orange", "drum", "simon", "tic-tac-toe"]
 
   for (var i=0; i< projectArr.length; i++){
@@ -51,4 +55,21 @@ if(this.classList.contains('dicee')){
     window.location.href = "https://lit-headland-09710.herokuapp.com";
   }
 
+});
+
+// For Mobile devices only - max-device-width:480px
+document.getElementById('navbar-icon').addEventListener("click", function(){
+  let navItems = document.getElementById("navbar-items");
+
+//this toggles the nav items
+//If navbar is open (block) then hide (none)
+  if (navItems.style.display === "block")
+  {
+    navItems.style.display = "none";
+  }
+  else
+  {
+    navItems.style.display = "block";
+    //else if its hidden, then show (display:block)
+  }
 });
