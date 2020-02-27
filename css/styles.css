@@ -450,10 +450,10 @@ li {
     margin: auto;
   }
   .project {
-    /* display: block; */
+    display: block;
     width : 100%;
 
-    margin: 20px 20px;
+    margin: 38px 0;
   }
   .portfolioTitle p {
     margin: 0 0 55px;
@@ -476,8 +476,7 @@ li {
     margin: auto;
   }
   .project {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 25px 0;
   }
   .portfolioTitle p {
     margin: 0 0 40px;
@@ -516,7 +515,7 @@ li {
   }
 
   .project {
-    margin: 10px 10px;
+    margin: 18px 0;
   }
 }
 
