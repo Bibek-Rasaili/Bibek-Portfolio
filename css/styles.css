@@ -429,58 +429,54 @@ li {
   }
 }
 
-/* FIXING the White space on the right */
+/* FIXING the Whi-te space on the right */
 @media screen and (max-width: 600px) {
   nav {
     display: block;
+    /* flex to block */
   }
-
   ul {
     margin-top: 15px;
+    /* adding margin between branding and nav items */
   }
 }
 
 @media screen and (max-width: 520px) {
-  /* conscious decision to align text center at only 520px or lower
-      due to style perference
-      - otherwise this can just be added at - max-width: 600px.
-  */
   nav {
     text-align: center;
+/* conscious decision due to style perference,
+ could've been done max-width: 600px.*/
   }
 }
 
 @media screen and (max-width: 430px) {
-  /* wh-ite space issue only started around 340px but styling changed earlier
-  for styling reasons*/
+  /* wh-ite space issue only started around 340px but styling changed earlier for styling reasons*/
 
   #title {
     margin-top: 40px;
     padding: 10px;
-    /* on smaller screens (such as 300px),
-    the padding on branding remains 100px therefore (is one of the reasons) causing
-    wh-ite space in right of the screen
-    ^ to avoid pigmentation on Atom - via plug-in*/
+    /* on smaller screens (such as 300px), the padding on branding remains 100px
+    causing wh-ite space in right of the screen
+
+    - added margin top 40px (to keep the text/heading/title 'centred')
+    */
   }
 
   ul {
     display: block;
     margin: 12px auto !important;
+    /* flex to block for whi-te space on right hand side (rhs) */
   }
-
   li {
     margin: 8px auto;
+    /* margin between the lists */
   }
 }
 
 
 @media screen and (max-width: 340px) {
-  /* title has padding of 100px. - at 430 it is reduced to 10px but
-     added margin top 40px (to keep the text/heading/title 'centred')
-
-     - on this screen this margin is no longer needed as screen is smalled
-     and min-heigher is changed to 520px too, so the image is still somewhat 70-100vh and not stretch unnecessarily
-  */
+/* margins pretty much no longer necessary on most of the elements as the screen
+are too small - causing white-space on rhs */
   #title {
     margin-top: 0;
   }
@@ -492,36 +488,22 @@ li {
     margin: 0;
   }
 
+/* 255px and under ( starts at 254) shows wh-ite space but added here for styling perference */
+  nav {
+    padding: 10px 30px;
+  }
+  h1, h2 {
+    font-size: 2rem;
+  }
+/* these solve the whi-te space issue for 255 and under */
+
+
   /* styling */
   #header {
     min-height: 520px;
   }
-}
-
-/*
-   the above and below are both screen width 340.
-
-   top- one is 340 - negate further changes from 430
-   below- one is for 255px but added at 340
-          "for styling reasons - looks better already at 340 px"
-*/
-
-@media screen and (max-width: 340px) {
-  /* 255px and under ( starts at 254) - shows wh-ite space
-    one of the solutions can be to change nav padding:
-    from  padding: 20px 70px;
-    to    padding:  10px 30px;
-  */
-  nav {
-    padding: 10px 30px;
-  }
-
-  h1, h2 {
-    font-size: 2rem;
-  }
-/* these solve the whi-te space issue
-
-styling below are to proportionalise the page in respect to the NEW heading size.*/
+  
+/* styling below are to proportionalise the page in respect to the NEW heading size.*/
   .branding {
     font-size: 1.8rem;
   }
@@ -534,9 +516,8 @@ styling below are to proportionalise the page in respect to the NEW heading size
               of the heading tags. - reduce the paragraph accoringly, button padding slightly less
                                     padding on #contact can depend on if it creates white-space problem
                                     otherwise the padding can be kept or reduced accordingly.s */
-  .skill-icon {
-  }
-  .footer-icon {
+  .skill-icon, .footer-icon {
+    font-size: 1.5rem;
   }
 
   /* For future reference, CSS variable could've been used to possible proportionalise
