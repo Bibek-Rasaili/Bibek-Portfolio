@@ -478,7 +478,7 @@ can be altered to desired output */
 
 /* nav icon to be shown only on mobiles  */
 /* max-device-width:410px - 500/620px   (- 620 for dev?) */
-@media (min-device-width:410px) and (max-device-width:620px) {
+@media (min-width:338px) and (max-width:620px) {
   #navbar-icon {
     display: block;
   }
@@ -500,6 +500,10 @@ can be altered to desired output */
   }
   li {
     margin: 8px auto;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
   }
 }
 
@@ -537,10 +541,10 @@ are too small - causing white-space on rhs */
   }
   ul {
     /* display: block; */
-    margin: 10px auto !important;
+    margin: 7px auto !important;
   }
   li {
-    margin: 0;
+    margin: 2px auto;
   }
 
 /* 255px and under ( starts at 254) shows wh-ite space but added here for styling perference */
@@ -555,7 +559,7 @@ are too small - causing white-space on rhs */
 
   /* styling */
   #header {
-    min-height: 520px;
+    min-height: 550px;
   }
 
 /* styling below are to proportionalise the page in respect to the NEW heading size.*/
@@ -586,13 +590,6 @@ are too small - causing white-space on rhs */
 */
 
 
-/* For future reference, CSS variable could've been used to possible proportionalise
-  these (esp header and paragraphs) more easily.
-
-  It was not used here as I had limited project experience with CSS varible and there
-  were other learning curves to overcome -
-
-  such as - manual navbar - (without bootstrap)
-          - absolute to wrap parent - (project, hover - effects)
-          - etc.
+/* For future reference, CSS variable could've been used
+to possible proportionalise these (esp header and paragraphs) more easily.
 */
