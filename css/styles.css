@@ -12,9 +12,8 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
-
   margin: 0;
-  padding: 0 ;
+  padding: 0;
 }
 
 h4 {
@@ -37,14 +36,12 @@ h4 {
 .container-about {
   width: 90%;
   margin: auto;
-
   padding: 90px 0;
 }
 
 .container-contact {
   width: 80%;
   margin: auto;
-
   padding: 90px 0;
   /* similar to portfolio and about */
 }
@@ -78,6 +75,7 @@ h4 {
   from {
     box-shadow: 0 0 0 0 rgba(100, 161, 157, 0.7);
   }
+
   to {
     box-shadow: 0 0 0 8px rgba(100, 161, 157, 0);
   }
@@ -99,9 +97,10 @@ nav {
 
 /* scroll text and textS added to differentiate
 between branding and navitems */
-.scroll-text, .scroll-texts  {
+.scroll-text, .scroll-texts {
   color: #000 !important;
 }
+
 /* hover css is also automatically added when
 scroll-texts class is added to an element */
 .scroll-texts:hover {
@@ -162,12 +161,12 @@ li {
   top: 15px;
   /* top, right
 can be altered to desired output */
-
   background: transparent;
   padding: 14px 16px;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
 #navbar-icon:hover {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -193,11 +192,11 @@ can be altered to desired output */
   margin: 2% auto;
 }
 
-
 /* Portfolio */
 #portfolio {
   text-align: center;
 }
+
 /* Added for the subheading for Projects/Portfolio */
 .portfolioTitle {
   width: 80%;
@@ -208,9 +207,8 @@ can be altered to desired output */
   margin: 0 0 15px;
 }
 
-.portfolioTitle p{
+.portfolioTitle p {
   color: #6c757d;
-
   margin: 0 0 65px;
 }
 
@@ -220,14 +218,12 @@ can be altered to desired output */
 
 .project {
   display: inline-block;
-  width : 30%;
-
+  width: 30%;
   margin: 10px 10px;
 }
 
-.project-image-container{
+.project-image-container {
   position: relative;
-
   cursor: pointer;
 }
 
@@ -235,7 +231,6 @@ can be altered to desired output */
   position: absolute;
   /* left: 0; */
   top: 0;
-
   width: 100%;
   height: 100%;
   /* background-color: rgba(254,209,54,.9);  taken to individual class
@@ -267,70 +262,66 @@ can be altered to desired output */
 
 .project-caption {
   background-color: #F8F9FA;
-
   padding: 15px;
 }
 
 /* Project colours  */
 .lucky {
-  background-color: rgba(34,120,207,.9);
+  background-color: rgba(34, 120, 207, .9);
 }
 
 .banana {
-  background-color: rgba(251,213,26, 0.9);
+  background-color: rgba(251, 213, 26, 0.9);
 }
 
 .orange {
-  background-color: rgba(255,165,0,.9);
+  background-color: rgba(255, 165, 0, .9);
 }
 
 .dicee {
-  background-color: rgba(57,62,70,.9);
+  background-color: rgba(57, 62, 70, .9);
 }
 
 .drum {
-  background-color: rgba(40,49,72,.9);
+  background-color: rgba(40, 49, 72, .9);
 }
 
 .simon {
-  background-color: rgba(3,32,62,.9);
+  background-color: rgba(3, 32, 62, .9);
 }
 
 .tic-tac-toe {
-  background-color: rgba(234,234,234,.98);
+  background-color: rgba(234, 234, 234, .98);
   /* 98% instead of 90, because its grey-ish color.
   this means '+' icon color change is not required */
 }
 
 .bitcoinAPI {
-  background-color: rgba(234,234,234,.95);
+  background-color: rgba(234, 234, 234, .95);
   /* See tic tac toe */
 }
 
 .newsletter-signup {
-  background-color: rgba(245,245,245,.98);
+  background-color: rgba(245, 245, 245, .98);
 }
 
 .to-do-list {
   /* background-color: rgba(228,234,252,.9);  second one is better.*/
-  background-color: rgba(165,133,225,.9);
-
+  background-color: rgba(165, 133, 225, .9);
 }
 
 .blog-website {
-  background-color: rgba(42,187,156,.9);
+  background-color: rgba(42, 187, 156, .9);
 }
-
 
 /* About me */
 #about {
   background-color: #f8f9fa;
   text-align: center;
   min-height: 650px;
-
 }
 
-.bioImg-container{
+.bioImg-container {
   float: left;
   /* bioImg-container was added as img was float so, it was not "respecting the MARGIN of
   skill container".
@@ -358,7 +349,6 @@ can be altered to desired output */
 .skill {
   display: block;
   width: 100%;
-
   clear: both;
   margin: 5% auto;
 }
@@ -409,7 +399,6 @@ can be altered to desired output */
   display: flex;
   vertical-align: middle;
   text-align: center;
-
   min-height: 650px;
   /* Same as Title and About (unless additional content, which would expand it).
   project should expand to projects added or taken away accordingly */
@@ -417,7 +406,6 @@ can be altered to desired output */
 
 #contact h2 {
   font-size: 3rem;
-
   margin: 0 0 15px;
 }
 
@@ -433,7 +421,6 @@ can be altered to desired output */
   background-color: #EAEAEA;
   overflow: hidden;
   padding: 50px;
-
   color: #8F8F8F;
 }
 
@@ -462,10 +449,11 @@ can be altered to desired output */
 
 /* Media Queries */
 @media screen and (max-width:1024px) {
+
   /*This has to be on top of 800px width - if not it doesn't work - flow of document*/
   .project {
     display: inline-block;
-    width : 40%;
+    width: 40%;
     /* show 2 project (items) only in screen smaller than 1024 */
     margin: 12px 20px;
   }
@@ -473,21 +461,23 @@ can be altered to desired output */
 
 @media screen and (max-width:800px) {
   .bioImg-container {
-    float:none;
+    float: none;
     /* width  - future changes?*/
   }
-/* display 1 project per line, 80% of screen */
-  .projects{
+
+  /* display 1 project per line, 80% of screen */
+  .projects {
     display: block;
     width: 80%;
     margin: auto;
   }
+
   .project {
     display: block;
-    width : 100%;
-
+    width: 100%;
     margin: 38px 0;
   }
+
   .portfolioTitle p {
     margin: 0 0 55px;
   }
@@ -498,18 +488,21 @@ can be altered to desired output */
     display: block;
     /* flex to block */
   }
+
   ul {
     margin-top: 15px;
     /* adding margin between branding and nav items */
   }
 
-  .projects{
+  .projects {
     width: 90%;
     margin: auto;
   }
+
   .project {
     margin: 25px 0;
   }
+
   .portfolioTitle p {
     margin: 0 0 40px;
   }
@@ -526,20 +519,25 @@ can be altered to desired output */
   #navbar-icon {
     display: block;
   }
+
   #navbar-items {
     display: none;
   }
+
   /* hide list and show icon */
   nav {
     display: block;
     text-align: left;
   }
+
   .branding {
     display: block;
   }
+
   ul {
-      text-align: center;
+    text-align: center;
   }
+
   li {
     margin: 8px auto;
   }
@@ -547,48 +545,21 @@ can be altered to desired output */
   .nav-link:hover {
     text-decoration: underline;
   }
+
   /* above are navbar icon effect and stylings */
-
-  /* as this is 600px - 338px
-  effects from 600 should be 'inherted.'
-
-  there may need to be some adjustments needed for
-  smaller screen in 600 - 338px range
-
-  such as
-  #title {
-    margin-top: 40px;
-    padding: 10px 0;
-  }
-  */
+  /* This is for iphone ..*/
   @media (min-device-width:338px) and (max-device-width:430px) {
-
-
-  #title {
-    /* doesn't show when developing using either
-    firefox or chrome BUT on iphone there is a title
-    padding-bottom lacking.. */
-
+    #title {
       margin-top: 40px;
       padding: 10px 0;
-
-    /* if the above doesn't work  try this: */
-
-    padding-bottom: 30px;
-
-/* IF NOT JUST SET MIN HEIGHT - to 650 or 610...!
-
-    !!! padding-bottom: ; !!! - 100px***
-
-    or maybe even margin-bottom: ;..
-     */
+      padding-bottom: 100px;
+      /* IF NOT JUST SET MIN HEIGHT - to 650 or 610...! OR  padding-bottom: - 100px****/
+    }
   }
-/* The other from below not added here as the rest looks fine. */
-}
+
 }
 
 @media screen and (max-width: 430px) {
-
   #title {
     margin-top: 40px;
     padding: 10px 0;
@@ -598,6 +569,7 @@ can be altered to desired output */
     display: block;
     margin: 12px auto !important;
   }
+
   li {
     margin: 8px auto;
   }
@@ -611,10 +583,12 @@ can be altered to desired output */
   #title {
     margin-top: 50px;
   }
+
   ul {
     /* display: block; */
     margin: 7px auto !important;
   }
+
   li {
     margin: 2px auto;
   }
@@ -622,6 +596,7 @@ can be altered to desired output */
   nav {
     padding: 10px 30px;
   }
+
   h1, h2 {
     font-size: 2rem;
   }
@@ -630,6 +605,7 @@ can be altered to desired output */
   #header {
     min-height: 580px;
   }
+
   .branding {
     font-size: 1.8rem;
   }
