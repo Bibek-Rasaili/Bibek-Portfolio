@@ -571,8 +571,12 @@ can be altered to desired output */
 
       margin-top: 40px;
       padding: 10px 0;
-    /* if the above doesn't work  try this:
 
+    /* if the above doesn't work  try this: */
+
+    padding-bottom: 20px;
+
+/*
     padding-bottom: ;
     or maybe even margin-bottom: ;..
      */
