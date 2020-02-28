@@ -420,6 +420,9 @@ can be altered to desired output */
   vertical-align: middle;
   text-align: center;
 
+  min-height: 600px;
+  /* Same as About (unless additional content, which would expand it). Title has 650.
+  project should expand to projects added or taken away accordingly */
 }
 
 #contact h2 {
