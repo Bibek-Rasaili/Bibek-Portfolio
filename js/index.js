@@ -1,6 +1,5 @@
 //Navbar effect
 document.addEventListener("scroll", function(){
-  document.getElementById("scroll").innerHTML = document.documentElement.scrollTop;
 
   if (document.documentElement.scrollTop > 35){ //35 from 50 - because small screens
     $('nav').addClass("nav-scroll");

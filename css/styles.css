@@ -4,10 +4,6 @@ body {
   font-family: monospace;
 }
 
-#scroll { /*DELETE*/
-  background-color: #EAEAEA;
-}
-
 h1 {
   font-size: 3.5rem;
   padding: 0;
@@ -21,33 +17,15 @@ h2 {
   padding: 0 ;
 }
 
-h4 {  /* projects header */
+h4 {
+  /* projects header */
   margin: 0;
   font-weight: 700;
-
-  /* font-size: 1.5rem; */
-  /* line-height: 1.2; */
-}
-
-p {}
-
-section {
-  min-height: 70vh;
-  /* FOR DEV Purposes - DELETE THIS LATER*/
 }
 
 /* Container */
 .container-portfolio {
-  /* width: 94%;
-  margin: auto; */
-
   padding: 90px 0;
-/*
-was 70.
-taken this from portfolio
-padding-top: 20px;
-padding-bottom: 20px;
-70 to 90*/
 }
 
 .projects {
@@ -57,12 +35,10 @@ padding-bottom: 20px;
 }
 
 .container-about {
-  /* Add padding then see if it looks better at 80% */
   width: 90%;
   margin: auto;
 
   padding: 90px 0;
-  /* similar to portfolio */
 }
 
 .container-contact {
@@ -82,7 +58,6 @@ padding-bottom: 20px;
   border: 0;
   /* #f4623a;  */
   border-radius: 5px;
-  /* color: #FFF; */
 }
 
 #title button:hover {
@@ -214,15 +189,14 @@ can be altered to desired output */
 
 #title p {
   font-family: fantasy;
-  /* p tag ? */
   font-size: 1.5rem;
   margin: 2% auto;
 }
 
+
 /* Portfolio */
 #portfolio {
   text-align: center;
-
 }
 /* Added for the subheading for Projects/Portfolio */
 .portfolioTitle {
@@ -243,7 +217,6 @@ can be altered to desired output */
 #portfolio img {
   width: 100%;
 }
-
 
 .project {
   display: inline-block;
@@ -281,7 +254,7 @@ can be altered to desired output */
 .project-hover-content {
   position: absolute;
   top: 38%;
-  /* 50 doesn't centre it */
+  /* 38% because 50%, doesn't centre it */
   width: 100%;
   /* height: 100%; not needed offset by 40% + bg-color set on parent element*/
 }
@@ -292,10 +265,9 @@ can be altered to desired output */
   font-weight: 900;
 }
 
-
 .project-caption {
   background-color: #F8F9FA;
-/* #F8F9FA */
+
   padding: 15px;
 }
 
@@ -340,20 +312,14 @@ can be altered to desired output */
 }
 
 .to-do-list {
-  /* background-color: rgba(228,234,252,.9); */
+  /* background-color: rgba(228,234,252,.9);  second one is better.*/
   background-color: rgba(165,133,225,.9);
 
-  /* Second one is better, I think. */
 }
 
 .blog-website {
   background-color: rgba(42,187,156,.9);
 }
-
-
-
-
-
 
 
 /* About me */
@@ -445,7 +411,7 @@ can be altered to desired output */
   text-align: center;
 
   min-height: 650px;
-  /* Same as About (unless additional content, which would expand it) and Title.
+  /* Same as Title and About (unless additional content, which would expand it).
   project should expand to projects added or taken away accordingly */
 }
 
@@ -467,7 +433,7 @@ can be altered to desired output */
   background-color: #EAEAEA;
   overflow: hidden;
   padding: 50px;
-  /*padding change your liking*/
+
   color: #8F8F8F;
 }
 
@@ -527,7 +493,6 @@ can be altered to desired output */
   }
 }
 
-/* FIXING the Whi-te space on the right */
 @media screen and (max-width: 600px) {
   nav {
     display: block;
@@ -553,14 +518,11 @@ can be altered to desired output */
 @media screen and (max-width: 520px) {
   nav {
     text-align: center;
-/* conscious decision due to style perference,
- could've been done max-width: 600px.*/
   }
 }
 
 /* nav icon to be shown only on mobiles  */
-/* max-DEVICE-width:410px - 500/620px   (- 620 for dev?) */
-@media (min-width:338px) and (max-width:620px) {/* DEVICE HERE*/
+@media (min-device-width:338px) and (max-device-width:620px) {
   #navbar-icon {
     display: block;
   }
@@ -570,9 +532,7 @@ can be altered to desired output */
   /* hide list and show icon */
   nav {
     display: block;
-    /* block added because it shows the links inline next to the icon  at certain res*/
     text-align: left;
-    /* aligned left for the icon to be on the right */
   }
   .branding {
     display: block;
@@ -590,26 +550,19 @@ can be altered to desired output */
 }
 
 @media screen and (max-width: 430px) {
-  /* wh-ite space issue only started around 340px but styling changed earlier for styling reasons*/
 
   #title {
     margin-top: 40px;
     padding: 10px;
-    /* on smaller screens (such as 300px), the padding on branding remains 100px
-    causing wh-ite space in right of the screen
 
-    - added margin top 40px (to keep the text/heading/title 'centred')
-    */
   }
 
   ul {
     display: block;
     margin: 12px auto !important;
-    /* flex to block for whi-te space on right hand side (rhs) */
   }
   li {
     margin: 8px auto;
-    /* margin between the lists */
   }
 
   .project {
@@ -617,11 +570,7 @@ can be altered to desired output */
   }
 }
 
-
-
 @media screen and (max-width: 340px) {
-/* margins pretty much no longer necessary on most of the elements as the screen
-are too small - causing white-space on rhs */
   #title {
     margin-top: 0;
   }
@@ -633,49 +582,22 @@ are too small - causing white-space on rhs */
     margin: 2px auto;
   }
 
-/* 255px and under ( starts at 254) shows wh-ite space but added here for styling perference */
   nav {
     padding: 10px 30px;
   }
   h1, h2 {
     font-size: 2rem;
   }
-/* these solve the whi-te space issue for 255 and under */
-
 
   /* styling */
   #header {
     min-height: 580px;
   }
-
-/* styling below are to proportionalise the page in respect to the NEW heading size.*/
   .branding {
     font-size: 1.8rem;
   }
 
-/* possible further improvements -
-
-1. styling icons to around half of h1/h2 or .branding font-size /
-2. change the paragraph (or Heading tag) on about me section to sort the ratio heading-paragraph
-3. contact - GET IN TOUCH section heading can at this size me not same but more similar to rest
-              of the heading tags. - reduce the paragraph accoringly, button padding slightly less
-                                    padding on #contact can depend on if it creates white-space problem
-                                    otherwise the padding can be kept or reduced accordingly.s */
   .skill-icon, .footer-icon {
     font-size: 1.8rem;
   }
 }
-
-
-
-
-
-/* 195px - it starts again - wh-ite space on the right but the screen is so small,
-    it is negligible (esp in era of big mobile screens) therefore
-    it will not be necessary to implement a solution
-*/
-
-
-/* For future reference, CSS variable could've been used
-to possible proportionalise these (esp header and paragraphs) more easily.
-*/
