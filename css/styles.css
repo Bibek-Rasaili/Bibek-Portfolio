@@ -67,6 +67,9 @@ padding-bottom: 20px;
 .container-contact {
   width: 80%;
   margin: auto;
+
+  padding: 90px 0;
+  /* similar to portfolio and about */
 }
 
 /* Buttons */
@@ -416,8 +419,7 @@ can be altered to desired output */
   display: flex;
   vertical-align: middle;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
 }
 
 #contact h2 {
