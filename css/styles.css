@@ -436,7 +436,7 @@ can be altered to desired output */
   text-align: center;
 
   min-height: 650px;
-  /* Same as About (unless additional content, which would expand it) and Title. 
+  /* Same as About (unless additional content, which would expand it) and Title.
   project should expand to projects added or taken away accordingly */
 }
 
