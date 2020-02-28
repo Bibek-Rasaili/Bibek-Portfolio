@@ -40,8 +40,13 @@ section {
   /* width: 94%;
   margin: auto; */
 
-  padding: 70px 0;
-    /* Padding 50? 70? added to top and bottom of (pretty much) every section*/
+  padding: 90px 0;
+/*
+was 70.
+taken this from portfolio
+padding-top: 20px;
+padding-bottom: 20px;
+70 to 90*/
 }
 
 .projects {
@@ -54,6 +59,9 @@ section {
   /* Add padding then see if it looks better at 80% */
   width: 90%;
   margin: auto;
+
+  padding: 90px 0;
+  /* similar to portfolio */
 }
 
 .container-contact {
@@ -196,8 +204,6 @@ can be altered to desired output */
 #portfolio {
   text-align: center;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 /* Added for the subheading for Projects/Portfolio */
 .portfolioTitle {
@@ -333,8 +339,6 @@ can be altered to desired output */
   text-align: center;
   min-height: 600px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .bioImg-container{
