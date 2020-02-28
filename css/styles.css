@@ -427,13 +427,12 @@ can be altered to desired output */
 
 #contact h2 {
   font-size: 3rem;
-  margin: 0;
 }
 
 #contact p {
   font-size: 1.5rem;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 42px;
 }
 
 /* Footer */
