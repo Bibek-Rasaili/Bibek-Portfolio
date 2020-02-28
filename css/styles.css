@@ -521,7 +521,7 @@ can be altered to desired output */
   }
 }
 
-/* nav icon to be shown only on mobiles  */
+/* nav icon to be shown only on mobiles  - should be 620 but want to inherit? */
 @media (min-device-width:338px) and (max-device-width:620px) {
   #navbar-icon {
     display: block;
@@ -560,10 +560,24 @@ can be altered to desired output */
     margin-top: 40px;
     padding: 10px 0;
   }
-
-  
   */
+  @media (min-device-width:338px) and (max-device-width:430px) {
 
+  }
+  #title {
+    /* doesn't show when developing using either
+    firefox or chrome BUT on iphone there is a title
+    padding-bottom lacking.. */
+
+      margin-top: 40px;
+      padding: 10px 0;
+    /* if the above doesn't work  try this:
+
+    padding-bottom: ;
+    or maybe even margin-bottom: ;..
+     */
+  }
+/* The other from below not added here as the rest looks fine. */
 }
 
 @media screen and (max-width: 430px) {
