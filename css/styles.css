@@ -187,7 +187,7 @@ can be altered to desired output */
 }
 
 #title p {
-  font-family: fantasy;
+  font-family: fantasy, monospace, sans-serif;
   font-size: 1.5rem;
   margin: 2% auto;
 }
