@@ -547,6 +547,21 @@ can be altered to desired output */
   .nav-link:hover {
     text-decoration: underline;
   }
+  /* above are navbar icon effect and stylings */
+
+  /* as this is 600px - 338px
+  effects from 600 should be 'inherted.'
+
+  there may need to be some adjustments needed for
+  smaller screen in 600 - 338px range
+
+  such as
+  #title {
+    margin-top: 40px;
+    padding: 10px 0;
+  }
+  */
+
 }
 
 @media screen and (max-width: 430px) {
