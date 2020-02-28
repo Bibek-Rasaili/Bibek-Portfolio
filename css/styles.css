@@ -563,7 +563,7 @@ can be altered to desired output */
   */
   @media (min-device-width:338px) and (max-device-width:430px) {
 
-  }
+
   #title {
     /* doesn't show when developing using either
     firefox or chrome BUT on iphone there is a title
@@ -576,12 +576,13 @@ can be altered to desired output */
 
     padding-bottom: 20px;
 
-/*
+/* IF NOT JUST SET MIN HEIGHT - to 650 or 610...!
     padding-bottom: ;
     or maybe even margin-bottom: ;..
      */
   }
 /* The other from below not added here as the rest looks fine. */
+}
 }
 
 @media screen and (max-width: 430px) {
