@@ -187,7 +187,7 @@ can be altered to desired output */
 }
 
 #title p {
-  font-family: fantasy, monospace, sans-serif;
+  font-family: fantasy;
   font-size: 1.5rem;
   margin: 2% auto;
 }
@@ -519,11 +519,9 @@ can be altered to desired output */
   #navbar-icon {
     display: block;
   }
-
   #navbar-items {
     display: none;
   }
-
   /* hide list and show icon */
   nav {
     display: block;
@@ -537,24 +535,18 @@ can be altered to desired output */
   ul {
     text-align: center;
   }
-
   li {
     margin: 8px auto;
   }
-
   .nav-link:hover {
     text-decoration: underline;
   }
 
   /* above are navbar icon effect and stylings */
+
   /* This is for iphone ..*/
-  @media (min-device-width:338px) and (max-device-width:430px) {
-    #title {
-      margin-top: 40px;
-      padding: 10px 0;
-      padding-bottom: 100px;
-      /* IF NOT JUST SET MIN HEIGHT - to 650 or 610...! OR  padding-bottom: - 100px****/
-    }
+  #title p {
+    font-family: monospace;
   }
 
 }
