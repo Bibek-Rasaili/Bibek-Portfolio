@@ -17,7 +17,6 @@ h1 {
 h2 {
   font-size: 2.8rem;
 
-  margin: 0 0 15px;
 }
 
 h4 {  /* projects header */
@@ -227,6 +226,10 @@ can be altered to desired output */
 .portfolioTitle {
   width: 80%;
   margin: auto;
+}
+
+.portfolioTitle h2 {
+  margin: 0 0 15px;
 }
 
 .portfolioTitle p{
@@ -442,6 +445,8 @@ can be altered to desired output */
 
 #contact h2 {
   font-size: 3rem;
+
+  margin: 0 0 15px;
 }
 
 #contact p {
