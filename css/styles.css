@@ -259,7 +259,7 @@ can be altered to desired output */
 
 
 .project-caption {
-  background-color: grey;
+  background-color: #F8F9FA;
 /* #F8F9FA */
   padding: 15px;
 }
@@ -519,8 +519,8 @@ can be altered to desired output */
 }
 
 /* nav icon to be shown only on mobiles  */
-/* max-device-width:410px - 500/620px   (- 620 for dev?) */
-@media (min-width:338px) and (max-width:620px) {
+/* max-DEVICE-width:410px - 500/620px   (- 620 for dev?) */
+@media (min-width:338px) and (max-width:620px) {/* DEVICE HERE*/
   #navbar-icon {
     display: block;
   }
@@ -605,7 +605,7 @@ are too small - causing white-space on rhs */
 
   /* styling */
   #header {
-    min-height: 550px;
+    min-height: 580px;
   }
 
 /* styling below are to proportionalise the page in respect to the NEW heading size.*/
