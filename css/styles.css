@@ -574,10 +574,12 @@ can be altered to desired output */
 
     /* if the above doesn't work  try this: */
 
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
 /* IF NOT JUST SET MIN HEIGHT - to 650 or 610...!
-    padding-bottom: ;
+
+    !!! padding-bottom: ; !!! - 100px***
+
     or maybe even margin-bottom: ;..
      */
   }
