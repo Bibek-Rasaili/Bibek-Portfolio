@@ -95,7 +95,8 @@ padding-bottom: 20px;
 }
 /* contact button animation */
 .pulse-button {
-  animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 2.85s infinite cubic-bezier(0.66, 0, 0, 1);
+  /* animate: keyframe pulse, every (2.85)s, continously */
 }
 @keyframes pulse {
   from {
@@ -354,7 +355,7 @@ can be altered to desired output */
 #about {
   background-color: #f8f9fa;
   text-align: center;
-  min-height: 600px;
+  min-height: 650px;
 
 }
 
@@ -434,8 +435,8 @@ can be altered to desired output */
   vertical-align: middle;
   text-align: center;
 
-  min-height: 600px;
-  /* Same as About (unless additional content, which would expand it). Title has 650.
+  min-height: 650px;
+  /* Same as About (unless additional content, which would expand it) and Title. 
   project should expand to projects added or taken away accordingly */
 }
 
