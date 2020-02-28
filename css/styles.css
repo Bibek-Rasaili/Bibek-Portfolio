@@ -36,11 +36,6 @@ section {
 }
 
 /* Container */
-.container {
-  width: 90%;
-  margin: auto;
-}
-
 .container-portfolio {
   /* width: 94%;
   margin: auto; */
@@ -53,6 +48,12 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.container-about {
+  /* Add padding then see if it looks better at 80% */
+  width: 90%;
+  margin: auto;
 }
 
 .container-contact {
