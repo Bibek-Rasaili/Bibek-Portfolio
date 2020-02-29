@@ -70,7 +70,7 @@ h4 {
 #btnTitle:hover {
   /* background-color: #9A9DA2; */
   /* background-color: #64A19D; */
-  
+
   border-color: #FFF;
   transform: scale(1.1);
 }
@@ -208,6 +208,7 @@ can be altered to desired output */
   font-size: 1.5rem;
   margin: 2% auto;
 }
+
 
 /* Portfolio */
 #portfolio {
