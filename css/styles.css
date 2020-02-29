@@ -57,8 +57,22 @@ h4 {
   border-radius: 5px;
 }
 
-#title button:hover {
-  background-color: red;
+#btnTitle {
+    border-radius: 8px;
+
+    border: 4px solid #64A19D;
+    padding:11px;
+
+    /* scale(1); */
+    transition: all .8s ease;
+}
+
+#btnTitle:hover {
+  /* background-color: #9A9DA2; */
+  /* background-color: #64A19D; */
+  
+  border-color: #FFF;
+  transform: scale(1.1);
 }
 
 .button:hover {
