@@ -89,6 +89,9 @@ nav {
   transition: background-color 0.9s;
   display: flex;
   align-items: center;
+
+  z-index: 2;
+  /* this was added as hover effect on the button was overlapping/superseding the navbar. */
 }
 
 .nav-scroll {
