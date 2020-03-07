@@ -1,1 +1,2 @@
 #Add here sensitive files that you do not wish to push to GitHub
+.DS_Store
